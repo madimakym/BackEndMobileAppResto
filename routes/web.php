@@ -1,0 +1,14 @@
+<?php
+
+Route::get('/', 'SaladesController@index');
+Route::resource('salades', 'SaladesController');
+Route::resource('dejeuner', 'DejeunerController');
+Route::resource('pizza', 'PizzaController');
+
+// Category pizza
+Route::get('/categorie/pizza', ['uses'=> 'CategoryPizzaController@index','as' => 'pizza.categorie.index']);
+Route::post('/categorie/pizza', ['uses' => 'CategoryPizzaController@store','as' => 'pizza.categorie.store']);
+Route::delete('/categorie/pizza/{id}', ['uses' => 'CategoryPizzaController@destroy','as' => 'pizza.categorie.destroy']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
