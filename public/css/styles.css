@@ -1,6 +1,6 @@
 body{
-    background-color: #5a5a5a21;
-    background-image: url(../img/bg.jpg);
+    background-color:#1b6b9cfa !important;
+    /* background-image: url(../img/bg.jpg); */
     background-repeat:no-repeat;
     background-position:center center;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -18,9 +18,10 @@ body{
 }
 
 .nav-link{
-    color: black;
+    color: #444;
     font-weight: 200;
     font-size: 15px;
+    font-weight: 400;
 }
 
 .content{
@@ -30,7 +31,7 @@ body{
 }
 
 .text-header{
-    margin-top: 250px;
+    margin-top: 120px;
     margin-bottom: 58px;
     text-align: center;
     background: #00000030;

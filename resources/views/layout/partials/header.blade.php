@@ -6,9 +6,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor01">
                   <ul class="navbar-nav mr-auto">
-                    <li class="{{ Request::is('salades') ? 'active' : '' }}">
+                    {{-- <li class="{{ Request::is('salades') ? 'active' : '' }}">
                       <a class="nav-link" href="{{ route('salades.index') }}">MENU</a>
-                    </li>
+                    </li> --}}
 
                     <li class="{{ Request::is('dejeuner') ? 'active' : '' }}">
                       <a class="nav-link" href="{{ route('dejeuner.index') }}">DÉJEUNER</a>

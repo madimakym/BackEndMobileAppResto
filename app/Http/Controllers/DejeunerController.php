@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
+use App\Dejeuner;
+
 
 class DejeunerController extends Controller
 {
@@ -125,4 +127,5 @@ class DejeunerController extends Controller
         return redirect()->route('dejeuner.index')
                         ->with('success','produit supprimé');
     }
+    
 }
